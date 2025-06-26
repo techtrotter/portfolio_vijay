@@ -15,10 +15,10 @@ Welcome to **Portfolio Vijay**, a full-stack developer portfolio built using **D
 ### 🏠 Homepage
 ![Homepage](./Screenshot%202025-06-27%20000919.png)
 
-### 🛠️ Skills / Project Section
+
 ![Projects](./Screenshot%202025-06-27%20001004.png)
 
-### 📞 Contact Form
+
 ![Contact Form](./Screenshot%202025-06-27%20001024.png)
 
 
