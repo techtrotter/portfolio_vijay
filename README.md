@@ -44,7 +44,7 @@ Welcome to **Portfolio Vijay**, a full-stack developer portfolio built using **D
 
 ## 🚀 Getting Started
 
-### 🐍 Backend (Django)
+###  Backend (Django)
 
 ```bash
 cd backend
