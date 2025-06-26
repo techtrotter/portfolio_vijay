@@ -7,7 +7,7 @@ Welcome to **Portfolio Vijay**, a full-stack developer portfolio built using **D
 
 ## 📽️ Preview
 
-▶️ Watch the [Live Demo Video](./Screen%20Recording%202025-06-27%20001901.mp4) 
+▶️ Watch the [Live Demo Video](./ScreenRecording2025-06-27001901-ezgif.com-video-to-gif-converter.gif) 
 
 <img src="https://raw.githubusercontent.com/techtrotter/portfolio_vijay/main/screenshots/demo.gif" alt="Demo" width="100%"/>
 
