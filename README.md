@@ -1,97 +1,156 @@
-# portfolio_vijay
-# 🌐 Portfolio Vijay – Full-Stack Developer Personal Site
+# GadgetBox
 
-Welcome to **Portfolio Vijay**, a full-stack developer portfolio built using **Django (Backend)** and **React (Frontend)**. This website is designed to showcase my technical skills, project work, and provide an interactive way for recruiters or collaborators to get in touch with me.
-
----
-
-## 📽️ Preview
-
-▶️ Watch the [Live Demo Video](./ScreenRecording2025-06-27001901-ezgif.com-video-to-gif-converter.gif) 
-
-<img src="https://raw.githubusercontent.com/techtrotter/portfolio_vijay/main/screenshots/demo.gif" alt="Demo" width="100%"/>
-## 📸 Screenshots
-
-### 🏠 Homepage
-![Homepage](./Screenshot%202025-06-27%20000919.png)
-
-
-![Projects](./Screenshot%202025-06-27%20001004.png)
-
-
-![Contact Form](./Screenshot%202025-06-27%20001024.png)
-
+**A full-stack e-commerce web application focused on electronics.**  
+Developed using Django REST Framework for the backend and React.js + Redux for the frontend.
 
 ---
 
-## 🔥 Key Features
+## Project Overview
 
-- 🖥️ **Homepage** with animated intro and CTA
-- 🧠 **Skills section** showcasing tech stack visually
-- 📂 **Projects listing** with images, descriptions, and GitHub links
-- 🧾 **Resume download option**
-- 📧 **Contact form** with backend API integration
-- 🛠️ Admin panel to manage content using Django admin
-- ✅ Fully responsive and optimized for mobile
-- 🎨 Sleek, minimal, and modern design
+GadgetBox is a responsive, scalable e-commerce solution featuring product listing, cart management, secure checkout, admin functionalities, and PayPal integration. It follows best practices in clean code architecture, RESTful API design, and frontend component reusability.
 
 ---
 
-## 🛠️ Tech Stack
+## Features
 
-**Frontend:**
-- React.js
-- React Router
-- Axios
-- Bootstrap / Tailwind CSS (optional)
+### User:
+- User registration, login with JWT-based authentication
+- Product listing, pagination, rating, and reviews
+- Cart system and order placement
+- PayPal payment gateway integration
+- View order history and order details
 
-**Backend:**
-- Django
-- Django REST Framework
-- CKEditor (Admin content editing)
-- SQLite (default), PostgreSQL (optional)
+### Admin:
+- Product creation, editing, deletion
+- Order delivery management
+- Access control (admin-only routes)
+- Auto user profile creation using Django signals
 
 ---
 
-## 🚀 Getting Started
+## Folder Structure
 
-###  Backend (Django)
+```
+GadgetBox/
+│
+├── backend/                  # Django REST Framework API
+│   ├── urls/                 # Modularized URL routing
+│   ├── views/                # API views and logic
+│   ├── models/               # Database schema
+│   ├── serializers/          # DRF Serializers
+│   ├── signals.py            # Auto profile creation
+│   └── db.sqlite3            # Development database
+│
+├── frontend/                 # React.js frontend
+│   ├── src/
+│   │   ├── components/
+│   │   ├── screens/
+│   │   ├── actions/
+│   │   └── reducers/
+│   └── public/
+│
+├── myenv/                    # Python virtual environment
+├── README.md
+├── package.json
+├── requirements.txt
+├── yarn.lock
+└── manage.py
+```
+
+---
+
+## Backend Setup (Django)
 
 ```bash
 cd backend
 python -m venv venv
-source venv/bin/activate    # Windows: venv\Scripts\activate
+source venv/bin/activate      # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
-⚛️ Frontend (React)
-bash
-Copy
-Edit
+```
+
+---
+
+## Frontend Setup (React)
+
+```bash
 cd frontend
 npm install
 npm start
-📁 Folder Structure
-vbnet
-Copy
-Edit
-portfolio_vijay/
-├── backend/
-│   └── Django backend project & API
-├── frontend/
-│   └── React single-page app
-├── README.md
-└── Screen Recording 2025-06-27 001901.mp4
-Deployment
-Frontend: Can be deployed to Netlify, Vercel, or Firebase
+```
 
-Backend: Deployable on Heroku, Render, or Railway
+---
 
-Configure CORS, .env, and deployment settings as needed
+## Authentication
 
-About Me
-I’m Bijoy Laxmi Biswas, a full-stack Python developer with a passion for clean code, functional design, and building apps that solve real-world problems.
+- Uses JWT tokens for login and access control
+- Protected routes for admin using custom middleware
+- Token refresh and expiration handled via SimpleJWT
 
-📫 Reach me at: blb8.dev@gmail.com
-🔗 LinkedIn
-📝 Hashnode Blog
+---
+
+## Payments
+
+- Integrated with PayPal REST API
+- Payment status recorded and linked with order model
+- Custom hooks for payment success handling
+
+---
+
+## Screenshots
+
+### Product Listing  
+![Product List](assets/screenshots/product-listing.png)
+
+### Product Detail  
+![Product Detail](assets/screenshots/product-detail.png)
+
+### Order Summary  
+![Order Page](assets/screenshots/order-summary.png)
+
+---
+
+## Demo Video
+
+**Watch the walkthrough demo:**  
+[Click to View Demo](assets/demo/Screen_Recording_2024-09-26_152344_resized.mp4)
+
+---
+
+## Deployment Instructions
+
+### Frontend
+- Can be deployed to Netlify, Vercel, or Firebase Hosting
+
+### Backend
+- Compatible with Heroku, Render, or Railway deployment
+- CORS, environment variables (`.env`), and production settings required
+
+---
+
+## Technologies Used
+
+| Layer      | Stack                           |
+|------------|----------------------------------|
+| Frontend   | React.js, Redux, React Router    |
+| Backend    | Django, Django REST Framework    |
+| Auth       | JWT Authentication (SimpleJWT)   |
+| Payment    | PayPal API (Sandbox)             |
+| Database   | SQLite3 (development), PostgreSQL (prod) |
+| Styling    | Bootstrap, React Bootstrap       |
+| Deployment | Netlify, Heroku, Railway         |
+
+---
+
+## About the Author
+
+**Bijoy Laxmi Biswas**  
+Full-stack Python developer passionate about clean architecture, scalable systems, and modern JavaScript.  
+- GitHub: [@techtrotter](https://github.com/techtrotter)  
+- LinkedIn: [Bijoy Laxmi Biswas](https://www.linkedin.com/in/bijoy-laxmi-biswas-cse07/)  
+- Email: biswas.bijaylacxmi04@gmail.com
+
+---
+
+
